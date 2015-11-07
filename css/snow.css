@@ -1,0 +1,47 @@
+
+/*font-family: 'Raleway', sans-serif;
+font-family: 'Playball', cursive;*/
+
+a.navbar-brand  img {
+	width: 298px;
+	height: auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in-out;
+}
+
+a.navbar-brand  img:hover {
+	opacity: .7;
+}
+
+.grayBg {
+	 background-color: #ebf2f7; 
+}
+
+@media (min-width: 768px) {
+	header .intro-text .intro-lead-in {
+		font-family: 'Playball', cursive;
+		color: #bcebff;
+		font-size: 36px;
+	}
+
+	.navbar-default.navbar-shrink .navbar-brand img {
+		width: 200px;
+	}
+}
+
+@media (max-width: 768px) {
+	header .intro-text .intro-heading {
+		font-size: 30px;
+	}
+
+	header .intro-text .intro-lead-in {
+		margin-bottom: 10px;
+	}
+
+	a.navbar-brand  img {
+		width: 200px;
+		height: auto;
+	}
+}
+
