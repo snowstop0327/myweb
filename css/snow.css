@@ -18,6 +18,17 @@ a.navbar-brand  img:hover {
 	 background-color: #ebf2f7; 
 }
 
+.profile-img {
+	background: #346FA5;
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	display: block;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
 @media (min-width: 768px) {
 	header .intro-text .intro-lead-in {
 		font-family: 'Playball', cursive;
