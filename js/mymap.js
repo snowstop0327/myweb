@@ -1,52 +1,19 @@
-[
-    {
-        "featureType": "all",
-        "elementType": "all",
-        "stylers": [
-            {
-                "saturation": "30"
-            },
-            {
-                "lightness": "-1"
-            },
-            {
-                "gamma": "1.29"
-            }
-        ]
-    },
-    {
-        "featureType": "all",
-        "elementType": "labels.text",
-        "stylers": [
-            {
-                "weight": "0.81"
-            },
-            {
-                "lightness": "20"
-            },
-            {
-                "saturation": "-32"
-            }
-        ]
-    },
+
+var map;
+var myLatLng = new google.maps.LatLng(24.987933, 121.288691);
+var contentString = '<a href="https://goo.gl/maps/PyyNdMrSzsH2" target="_blank" style="text-align:left;color:#0071bc;text-decoration: none;">蔽宅！ </a>';
+
+var MY_MAPTYPE_ID = 'custom_style';
+
+function initialize() {
+
+  var featureOpts = [
     {
         "featureType": "administrative",
-        "elementType": "all",
+        "elementType": "labels.text.fill",
         "stylers": [
             {
-                "lightness": "-22"
-            },
-            {
-                "saturation": "-53"
-            },
-            {
-                "gamma": "1.38"
-            },
-            {
-                "color": "#336884"
-            },
-            {
-                "weight": "0.71"
+                "color": "#444444"
             }
         ]
     },
@@ -55,73 +22,37 @@
         "elementType": "all",
         "stylers": [
             {
-                "visibility": "on"
-            },
-            {
-                "color": "#ffffff"
-            },
-            {
-                "lightness": "1"
+                "hue": "#00caff"
             }
         ]
     },
     {
-        "featureType": "landscape.man_made",
-        "elementType": "geometry",
+        "featureType": "poi",
+        "elementType": "all",
         "stylers": [
             {
-                "weight": 0.9
-            },
-            {
                 "visibility": "off"
-            },
-            {
-                "lightness": "8"
             }
         ]
     },
     {
-        "featureType": "poi.park",
+        "featureType": "road",
         "elementType": "geometry.fill",
         "stylers": [
             {
-                "visibility": "on"
-            },
-            {
-                "color": "#83cead"
+                "hue": "#0094ff"
             }
         ]
     },
     {
         "featureType": "road",
-        "elementType": "all",
+        "elementType": "labels.text.fill",
         "stylers": [
             {
-                "visibility": "on"
+                "weight": "1.29"
             },
             {
-                "color": "#c4d5db"
-            },
-            {
-                "lightness": "10"
-            }
-        ]
-    },
-    {
-        "featureType": "road",
-        "elementType": "labels.text",
-        "stylers": [
-            {
-                "saturation": "-15"
-            },
-            {
-                "lightness": "-34"
-            },
-            {
-                "weight": "0.90"
-            },
-            {
-                "gamma": "0.90"
+                "gamma": "1.86"
             }
         ]
     },
@@ -130,49 +61,25 @@
         "elementType": "all",
         "stylers": [
             {
-                "visibility": "on"
-            },
-            {
-                "color": "#89d0f0"
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "weight": "1.68"
+                "visibility": "simplified"
             }
         ]
     },
     {
         "featureType": "road.arterial",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
         "elementType": "all",
         "stylers": [
             {
-                "visibility": "on"
-            },
-            {
-                "color": "#b5daea"
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "weight": "4.08"
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "labels.text",
-        "stylers": [
-            {
-                "lightness": "-31"
+                "visibility": "off"
             }
         ]
     },
@@ -181,26 +88,58 @@
         "elementType": "all",
         "stylers": [
             {
+                "color": "#1994c1"
+            },
+            {
                 "visibility": "on"
             },
             {
-                "color": "#3ca7dd"
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "labels.text",
-        "stylers": [
-            {
-                "saturation": "78"
-            },
-            {
-                "lightness": "-51"
-            },
-            {
-                "gamma": "3.40"
+                "weight": "0.71"
             }
         ]
     }
-]
+];
+
+  var mapOptions = {
+    zoom: 17,
+    center: myLatLng,
+    mapTypeControlOptions: {
+      mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+    },
+    mapTypeId: MY_MAPTYPE_ID,
+    scrollwheel: false, // Disable Mouse Scroll zooming (Essential for responsive sites!)
+      // All of the below are set to true by default, so simply remove if set to true:
+      panControl:true, // Set to false to disable
+      mapTypeControl:true, // Disable Map/Satellite switch
+      scaleControl:false, // Set to false to hide scale
+      streetViewControl:true, // Set to disable to hide street view
+      overviewMapControl:true, // Set to false to remove overview control
+      rotateControl:true // Set to false to disable rotate control
+  };
+
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+
+  var styledMapOptions = {
+    name: 'Custom Style'
+  };
+
+  var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
+  var infowindow = new google.maps.InfoWindow({
+      content: contentString
+  });
+  var image = 'img/mylogo.svg';
+  var marker = new google.maps.Marker({
+      position: myLatLng,
+      map: map,
+      icon: image
+  });
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+  });
+  infowindow.open(map,marker);
+
+  map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
