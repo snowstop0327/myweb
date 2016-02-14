@@ -85,7 +85,7 @@ h6 {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    border-color: #f6bf01;
+    border-color: #337ab7;
     color: #fff;
     background-color: #005c99;
 }
@@ -418,13 +418,15 @@ section h3.section-subheading {
 
 #portfolio .portfolio-item .portfolio-caption h4 {
     margin: 0;
+    margin-bottom: 10px;
     text-transform: none;
+    font-size: 20px;
 }
 
 #portfolio .portfolio-item .portfolio-caption p {
     margin: 0;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
+    font-size: 13px;
     font-style: italic;
 }
 

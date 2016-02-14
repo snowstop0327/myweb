@@ -194,4 +194,69 @@ skill
 	/* float: right; */
 }
 
+/* ==========================================================================
+作品集
+========================================================================== */
+.ribbon-box .ribbon {
+	 display: inline-block;
+	 position: absolute;
+	 left: 20px;
+	 top: 37px;
+}
+
+.ribbon-box .ribbon:before,
+ .ribbon-box .ribbon:after {
+	 content: "";
+	 display: block;
+	 position: absolute;
+	 height: 54px;
+	 bottom: -17px;
+	 border: 18px solid #DE9553;
+}
+
+.ribbon-box .ribbon:before {
+	 border-bottom-color: transparent;
+	 bottom: -70px;
+}
+
+.ribbon span {
+	display: table-caption;
+	color: #FFF;
+	position: absolute;
+	top: -30px;
+	left: 10px;
+}
+
+/*blur*/
+.ribbon-box .blue-ribbon {
+	 display: inline-block;
+	 position: absolute;
+	 left: 20px;
+	 top: 37px;
+}
+
+.ribbon-box .blue-ribbon:before,
+ .ribbon-box .blue-ribbon:after {
+	 content: "";
+	 display: block;
+	 position: absolute;
+	 height: 54px;
+	 bottom: -17px;
+	 border: 18px solid #0071bc;
+}
+
+.ribbon-box .blue-ribbon:before {
+	 border-bottom-color: transparent;
+	 bottom: -70px;
+}
+
+.blue-ribbon span {
+	display: table-caption;
+	color: #FFF;
+	position: absolute;
+	top: -30px;
+	left: 10px;
+}
+
+
 
