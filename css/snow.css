@@ -53,6 +53,7 @@ a.navbar-brand  img:hover {
 
 section#contact .section-heading {
     color: #4D4D4D;
+    font-family: 'Raleway',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -195,7 +196,7 @@ skill
 }
 
 /* ==========================================================================
-作品集
+ä½œå“é›†
 ========================================================================== */
 .ribbon-box .ribbon {
 	 display: inline-block;

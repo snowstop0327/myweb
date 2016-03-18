@@ -1,7 +1,7 @@
 
 var map;
-var myLatLng = new google.maps.LatLng(24.987933, 121.288691);
-var contentString = '<a href="https://goo.gl/maps/PyyNdMrSzsH2" target="_blank" style="text-align:left;color:#0071bc;text-decoration: none;">蔽宅！ </a>';
+var myLatLng = new google.maps.LatLng(24.936595, 121.287892);
+var contentString = '<a href="https://goo.gl/maps/ssuTFu5cuHR2" target="_blank" style="text-align:left;color:#0071bc;text-decoration: none;">蔽宅！ </a>';
 
 var MY_MAPTYPE_ID = 'custom_style';
 

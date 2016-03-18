@@ -8,7 +8,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Helvetica,Arial,'LiHei Pro','Microsoft JhengHei','微軟正黑體','新細明體',sans-serif;
 }
 
 .text-muted {
@@ -55,7 +55,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Helvetica,Arial,'LiHei Pro','Microsoft JhengHei','微軟正黑體','新細明體',sans-serif;
     font-weight: 700;
 }
 
@@ -125,7 +125,7 @@ fieldset[disabled] .btn-primary.active {
     border-color: #0071bc;
     border-radius: 3px;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Helvetica,Arial,'LiHei Pro','Microsoft JhengHei','微軟正黑體','新細明體',sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
@@ -323,7 +323,7 @@ header .intro-text .intro-heading {
     header .intro-text .intro-heading {
         margin-bottom: 50px;
         text-transform: uppercase;
-        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: Helvetica,Arial,'LiHei Pro','Microsoft JhengHei','微軟正黑體','新細明體',sans-serif;
         font-size: 50px;
         font-weight: 700;
         line-height: 75px;
@@ -410,7 +410,7 @@ section h3.section-subheading {
 
 #portfolio .portfolio-item .portfolio-caption {
     margin: 0 auto;
-    padding: 25px;
+    padding: 16px;
     max-width: 400px;
     text-align: center;
     background-color: #fff;
@@ -420,7 +420,7 @@ section h3.section-subheading {
     margin: 0;
     margin-bottom: 10px;
     text-transform: none;
-    font-size: 20px;
+    font-size: 1.3em;
 }
 
 #portfolio .portfolio-item .portfolio-caption p {
