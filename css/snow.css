@@ -194,9 +194,14 @@ skill
 	width: 60%;
 	/* float: right; */
 }
+.skill-text {
+	max-width: 220px;
+    text-align: left;
+    margin: 10px auto;
+}
 
 /* ==========================================================================
-ä½œå“é›†
+portfolio
 ========================================================================== */
 .ribbon-box .ribbon {
 	 display: inline-block;
