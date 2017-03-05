@@ -128,7 +128,7 @@ function initialize() {
   var infowindow = new google.maps.InfoWindow({
       content: contentString
   });
-  var image = 'img/mylogo.svg';
+  var image = 'img/favicon.png';
   var marker = new google.maps.Marker({
       position: myLatLng,
       map: map,
