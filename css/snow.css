@@ -2,6 +2,17 @@
 /*font-family: 'Raleway', sans-serif;
 font-family: 'Playball', cursive;*/
 
+body {
+	font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "microsoft jhenghei", "microsoft mhei", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+html {
+	font-size: 100%;
+}
+.portfolio-modal .modal-content p.item-intro {
+	text-align: center;
+}
+
 a.navbar-brand  img {
 	width: 298px;
 	height: auto;
@@ -16,6 +27,11 @@ a.navbar-brand  img:hover {
 
 .grayBg {
 	 background-color: #ebf2f7; 
+}
+
+.gray-text {
+	color: #666;
+	font-weight: 200;
 }
 
 .profile-img {
@@ -81,6 +97,15 @@ section#contact .section-heading {
 		width: 200px;
 		height: auto;
 	}
+}
+
+.portfolio-modal .modal-content p {
+	font-size: 1rem;
+	text-align: justify;
+}
+.portfolio-modal .modal-content .list-inline {
+	text-align: center;
+	font-weight: 200;
 }
 
 .light-bg { 
