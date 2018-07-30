@@ -289,5 +289,36 @@ portfolio
 	left: 10px;
 }
 
+/*gray*/
+.ribbon-box .gray-ribbon {
+	 display: inline-block;
+	 position: absolute;
+	 left: 20px;
+	 top: 37px;
+}
+
+.ribbon-box .gray-ribbon:before,
+ .ribbon-box .gray-ribbon:after {
+	 content: "";
+	 display: block;
+	 position: absolute;
+	 height: 54px;
+	 bottom: -17px;
+	 border: 18px solid #777;
+}
+
+.ribbon-box .gray-ribbon:before {
+	 border-bottom-color: transparent;
+	 bottom: -70px;
+}
+
+.gray-ribbon span {
+	display: table-caption;
+	color: #FFF;
+	position: absolute;
+	top: -30px;
+	left: 10px;
+}
+
 
 
