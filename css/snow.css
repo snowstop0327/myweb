@@ -100,8 +100,10 @@ section#contact .section-heading {
 }
 
 .portfolio-modal .modal-content p {
-	font-size: 1rem;
+	font-size: 1.4rem;
+	line-height: 1.58;
 	text-align: justify;
+	margin: 20px auto;
 }
 .portfolio-modal .modal-content .list-inline {
 	text-align: center;
@@ -342,6 +344,10 @@ portfolio
 	background: #E6EDF2;
 	color: #fff;
 }
+.circle-box:active,.circle-box:focus {
+	background: #666;
+	color: #fff;
+}
 .circle-box i {
 	width: 45px;
 	height: 45px;
@@ -350,7 +356,14 @@ portfolio
 }
 .portfolio-modal figcaption {
 	font-size: 1rem;
-	color: #666;
+	color: #757575;
+}
+.underline-link {
+	color: inherit;
+	text-decoration: underline;
+}
+.underline-link:hover {
+	color: #0071bc;
 }
 
 

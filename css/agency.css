@@ -829,7 +829,7 @@ ul.social-buttons li a:active {
 }
 
 .portfolio-modal .modal-content img {
-    margin-bottom: 30px;
+    margin: 10px auto;
 }
 
 .portfolio-modal .close-modal {
