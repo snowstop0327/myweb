@@ -320,5 +320,37 @@ portfolio
 	left: 10px;
 }
 
+.app-link {
+	list-style: none;
+	padding: 0;
+	margin-bottom: 20px;
+}
+.app-link li {
+	display: inline-block;
+	margin: 0 16px;
+}
+.circle-box {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	display: inline-block;
+	background: #666;
+	color: #fff;
+	transition: 0.3s all ease-out;
+}
+.circle-box:hover {
+	background: #E6EDF2;
+	color: #fff;
+}
+.circle-box i {
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	font-size: 1.5rem;
+}
+.portfolio-modal figcaption {
+	font-size: 1rem;
+	color: #666;
+}
 
 
