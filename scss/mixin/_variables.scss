@@ -1,0 +1,62 @@
+// color
+// 
+$primary: #185A9D;
+$secondary: #43CEA2;
+$gray-74: #4A4A4A;
+$gray-119: #777777;
+$gray-155: #9B9B9B;
+$gray-216: #D8D8D8;
+$white: #ffffff;
+$white-ter: #F2F2F2;
+
+$grey-darker: $gray-74;
+$grey-dark: $gray-119;
+$grey: #EEEEEE;
+$grey-light: $gray-155;
+$grey-lighter: $gray-216;
+
+$background: $white-ter !default;
+
+// Text colors
+
+$text: $grey-dark !default;
+$text-strong: $grey-darker !default;
+
+
+// Link colors
+
+$link: $secondary !default
+$link-hover: $grey-darker !default
+$link-hover-border: $grey-light !default
+$link-focus: $grey-darker !default
+$link-focus-border: $secondary !default
+$link-active: $grey-darker !default
+$link-active-border: $grey-dark !default
+
+// breakpoint
+
+$mobile: 480px !default;
+$tablet: 768px !default;
+$desktop: 1024px !default;
+$widescreen: 1408px !default;
+
+
+// font
+
+$family-sans-serif: BlinkMacSystemFont, -apple-system, "Segoe UI", "microsoft jhenghei", "microsoft mhei", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:   1.25rem !default;
+$font-size-sm:   .875rem !default;
+
+$Raleway: 'Raleway', sans-serif;
+$Comfortaa: 'Comfortaa', cursive;
+
+
+// bg-linear-gradient
+
+$linear-bg:linear-gradient(180deg, $secondary 0%, $primary 100%); 
+
+
+// border
+
+$control-border-width: 1px !default;

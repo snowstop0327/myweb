@@ -1,0 +1,25 @@
+.button {
+    background-color: #fff;
+    border-color: #dbdbdb;
+    border-width: 1px;
+    color: #363636;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    @include unselectable;
+    @include control;
+}
+
+.next-page {
+	width: 65px; 
+	height: 65px;
+	@include set-center;
+	display: inline-flex;
+	position: absolute; 
+	bottom: 30px; 
+	right: 30px;
+	transform:rotate(45deg);
+	background: $linear-bg;
+	@include unselectable;
+}
