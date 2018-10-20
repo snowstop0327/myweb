@@ -1,25 +1,51 @@
 .button {
+	position: relative;
     background-color: #fff;
     border-color: #dbdbdb;
     border-width: 1px;
     color: #363636;
+    font-weight: bold;
     cursor: pointer;
     justify-content: center;
     text-align: center;
     white-space: nowrap;
+    transition: 0.5s all ease-in;
     @include unselectable;
     @include control;
+
+    &.linear-bg {
+    	background: $linear-bg;
+    	color: $white;
+    	border-color: $white;
+    	&:hover {
+    		background: $linear-bg-hover;
+    		transform:translateY(-0.2em);
+    		box-shadow: 0px 2px 13px rgba($secondary,0.8);
+    	}
+    }
+    &.is-white {
+    	background-color: $white;
+    	border-color: transparent;
+    	color: $primary;
+    	&:hover {
+    		mark:after {
+    			height: 0;
+    		}
+    		#btn-primary {
+    			rect {
+    				stroke-width: 2px;
+					stroke: $primary;
+					stroke-dasharray: 50 0;
+					stroke-dashoffset: 0;
+    			}
+    		}
+    	}
+    }
+    svg {
+    	position: absolute;
+		top: 0;
+		left: 0;
+    }
 }
 
-.next-page {
-	width: 65px; 
-	height: 65px;
-	@include set-center;
-	display: inline-flex;
-	position: absolute; 
-	bottom: 30px; 
-	right: 30px;
-	transform:rotate(45deg);
-	background: $linear-bg;
-	@include unselectable;
-}
+

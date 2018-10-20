@@ -1,0 +1,14 @@
+
+.primary-text {
+	color: $primary;
+}
+
+.test-border {
+	@include border-style(1px,red);
+	box-sizing: border-box;
+}
+
+.linear-bg {
+	background: $linear-bg;
+
+}

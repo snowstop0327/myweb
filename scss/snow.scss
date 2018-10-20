@@ -1,11 +1,27 @@
+
 //全域變數&mix
 @import "mixin/variables";
 @import "mixin/mixins";
 
+//bulma
+@import "bulma/sass/utilities/_all.sass";
+@import "bulma/sass/base/_all.sass";
+@import "bulma/sass/grid/_all.sass";
+@import "bulma/sass/elements/title";
+
+
 //基本設定
-@import "base/normalize";
+// @import "base/normalize";
+@import "base/helpers";
 @import "base/layout";
 
 //共用模組
 @import "module/button";
 @import "module/svg";
+@import "module/icon";
+@import "module/progress";
+
+//各群組樣式
+@import "pages/TopScreen";
+@import "pages/about";
+@import "pages/skill";
