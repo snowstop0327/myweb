@@ -6,7 +6,7 @@
 		content: "";
 		z-index: 3;
 		position: absolute;
-		bottom: -100px;
+		bottom: -99px;
 		left: 0;
 		width: 150%;
 		height: 100%;
@@ -78,6 +78,8 @@
 	}
 }
 
+// my-tools style
+
 .my-tools {
 	position: relative;
 	background-color: transparent;
@@ -88,12 +90,13 @@
 	}
 
 	&:after {
-		@include el-abso;
-		top: -60px;
+		position: fixed;
+		content: "";
+		top: 0;
 		bottom: 0;
 		left: 0;
 		right: 0;
-		background: linear-gradient(180deg, $secondary 0%, $primary 100%);
+		background: $linear-bg;
 		opacity: 0.5;
 		z-index: -1;
 	}
@@ -102,9 +105,36 @@
 .mytools-list {
 	margin: 72px;
 	img {
+		width: 80px;
 		margin-right: 72px;
+		margin-bottom: ($column-gap*2);
 		&:last-child {
 			margin-right: 0;
 		}
 	}
+	@include tablet-only {
+		img {
+			width: 60px;
+			margin-right: ($column-gap*2);
+			margin-bottom: $column-gap;
+		}
+	}
+}
+
+@include mobile {
+	.my-tools {
+		margin-top: ($column-gap*2);
+	}
+	.mytools-list {
+		margin: ($column-gap*3) auto;
+		img {
+			width: auto;
+			height: 25%;
+			margin-right: $column-gap;
+			&:nth-child(3), &:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	
 }
