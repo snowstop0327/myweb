@@ -1,17 +1,17 @@
 .button {
-	position: relative;
-    background-color: #fff;
-    border-color: #dbdbdb;
-    border-width: 1px;
-    color: #363636;
+	// position: relative;
+ //    background-color: #fff;
+ //    border-color: #dbdbdb;
+ //    border-width: 1px;
+ //    color: #363636;
     font-weight: bold;
-    cursor: pointer;
-    justify-content: center;
-    text-align: center;
-    white-space: nowrap;
-    transition: 0.5s all ease-in;
-    @include unselectable;
-    @include control;
+    // cursor: pointer;
+    // justify-content: center;
+    // text-align: center;
+    // white-space: nowrap;
+    transition: 0.3s all ease-in;
+    // @include unselectable;
+    // @include control;
 
     &.linear-bg {
     	background: $linear-bg;
@@ -27,7 +27,11 @@
     	background-color: $white;
     	border-color: transparent;
     	color: $primary;
+        mark:after {
+            transition: 0.3s all ease-out;
+        }
     	&:hover {
+            color: $primary;
     		mark:after {
     			height: 0;
     		}

@@ -8,6 +8,9 @@
 @import "bulma/sass/base/_all.sass";
 @import "bulma/sass/grid/_all.sass";
 @import "bulma/sass/elements/title";
+@import "bulma/sass/elements/button";
+@import "bulma/sass/elements/icon";
+@import "bulma/sass/components/navbar";
 
 
 //基本設定
@@ -20,8 +23,12 @@
 @import "module/svg";
 @import "module/icon";
 @import "module/progress";
+@import "module/tabs";
+@import "module/lightbox";
 
-//各群組樣式
+//各群組頁面樣式
 @import "pages/TopScreen";
 @import "pages/about";
 @import "pages/skill";
+@import "pages/portfolio";
+@import "pages/case";

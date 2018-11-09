@@ -1,6 +1,7 @@
 #skill {
 	position: relative;
 	padding-bottom: 0;
+	border-top: 1px solid $white-ter;
 	&:after {
 		display: block;
 		content: "";

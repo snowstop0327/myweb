@@ -15,6 +15,11 @@ $top-card-padding: 20px;
 		height: $mobile-top-height;
 		padding: $mobile-padding-value;
 	}
+	.button.is-white {
+		&:hover {
+			background-color: transparent;
+		}
+	}
 }
 
 .brand-area {
@@ -86,44 +91,9 @@ $top-card-padding: 20px;
 	display: flex;
 	align-content:flex-start;
 	flex-wrap: wrap;
+
 	.top-nav {
-		list-style: none;
 		margin: 32px $mobile-padding-value 100px auto;
-		width: 100%;
-		display: flex;
-		justify-content:flex-end;
-		li {
-			display: inline-block;
-			margin: 0 8px;
-			width: 100px;
-			height: 1rem*1.6;
-			text-align: center;
-			overflow: hidden;
-			
-			a {
-				display: block;
-				color: $primary;
-				font-family: $Raleway;
-				font-weight: bold;
-				// padding: 8px 0;
-				line-height: 1.6;
-				transition: 0.3s all ease;
-				span {
-					display: block;
-					height: 1rem*1.6;
-				}
-				mark {
-					display: inline-block;
-					text-align: center;
-					height: 1rem*1.6;
-				}
-			}
-			&:hover {
-				a {
-					transform: translateY(-26px);
-				}
-			}
-		}
 	}
 	.info-content {
 		margin: 0 auto;
@@ -230,5 +200,4 @@ $top-card-padding: 20px;
 			}
 		}
 	}
-
 }

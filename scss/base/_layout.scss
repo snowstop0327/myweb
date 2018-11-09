@@ -81,7 +81,7 @@ section {
 }
 
 .section-header {
-	margin: 0 auto;
+	margin: $mobile-padding-value auto 0 auto;
 	text-align: center;
 	.title {
 		margin: 0 auto 0.5rem;
@@ -133,6 +133,86 @@ section {
 	@include mobile {
 		margin-top: 40px;
 		margin-bottom: 0;
+	}
+}
+
+.top-nav {
+	list-style: none;
+	width: 100%;
+	display: flex;
+	justify-content:flex-end;
+	li {
+		display: inline-block;
+		margin: 0 8px;
+		width: 100px;
+		height: 1rem*1.6;
+		text-align: center;
+		overflow: hidden;
+		
+		a {
+			display: block;
+			color: $primary;
+			font-family: $Raleway;
+			font-weight: bold;
+			// padding: 8px 0;
+			line-height: 1.6;
+			transition: 0.3s all ease;
+			span {
+				display: block;
+				height: 1rem*1.6;
+			}
+			mark {
+				display: inline-block;
+				text-align: center;
+				height: 1rem*1.6;
+			}
+		}
+		&:hover {
+			a {
+				transform: translateY(-26px);
+			}
+		}
+	}
+}
+
+.navbar {
+	transition: 0.5s transform ease-in-out;
+	transform: translateY(-100%);
+	@include tablet {
+		.navbar-brand {
+			align-items: center;
+			img {
+				height: 35px;
+			}
+		}
+	}
+	@include desktop {
+		.navbar-brand {
+			img {
+				height: auto;
+			}
+		}
+	}
+}
+
+.footer {
+	background: $linear-bg;
+	color: $white;
+	font-family: $Comfortaa;
+	padding: 2rem 0;
+	strong {
+		color: inherit;
+	}
+	ul {
+		display: flex;
+		justify-content: center;
+		a {
+			color: $white;
+			font-size: 1.9rem;
+			&:hover {
+				opacity: 0.8;
+			}
+		}
 	}
 }
 

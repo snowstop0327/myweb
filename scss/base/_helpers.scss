@@ -12,3 +12,20 @@
 	background: $linear-bg;
 
 }
+
+.border-bottom {
+	border-bottom: 1px solid $grey-lighter;
+}
+
+.field {
+	&.is-grouped {
+		display: flex;
+		justify-content: flex-start;
+	}
+}
+
+.max-700 {
+	max-width: 700px;
+	display: block;
+	margin: 0 auto;
+}
