@@ -1,0 +1,22 @@
+doctype html
+|
+|
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+|
+|
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+|
+|
+<!--[if !IE]><!-->
+html(lang="zh-TW")|<!--<![endif]-->
+	head
+		include _head.jade
+
+	body
+		//- 裝入頭部
+		include ../HTML/header.html
+		//- 裝入內容
+		.wrapper
+			include ../HTML/index-content.html
+			|
+			include ../HTML/footer.html
